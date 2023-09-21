@@ -12,6 +12,8 @@ const SamplePage = Loadable(lazy(() => import('pages/extra-pages/SamplePage')));
 
 // render - utilities
 const Parsing = Loadable(lazy(() => import('pages/components-overview/Parsing')));
+const Extract = Loadable(lazy(() => import('pages/components-overview/Extract')));
+const Visual = Loadable(lazy(() => import('pages/components-overview/Visual')));
 const Typography = Loadable(lazy(() => import('pages/components-overview/Typography')));
 const Color = Loadable(lazy(() => import('pages/components-overview/Color')));
 const Shadow = Loadable(lazy(() => import('pages/components-overview/Shadow')));
@@ -59,6 +61,14 @@ const MainRoutes = {
     {
       path: 'parsing',
       element: <Parsing />
+    },
+    {
+      path: 'extract',
+      element: <Extract />
+    },
+    {
+      path: 'visual',
+      element: <Visual />
     },
   ]
 };

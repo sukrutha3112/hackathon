@@ -27,33 +27,40 @@ const utilities = {
   children: [
     {
       id: 'util-typography',
-      title: 'Parsing',
+      title: 'Parsing Image',
       type: 'item',
       url: '/parsing',
-      //icon: icons.FontSizeOutlined
+      icon: icons.FontSizeOutlined
     },
     {
       id: 'util-color',
-      title: 'Color',
+      title: 'Extract PDF',
       type: 'item',
-      url: '/color',
-      icon: icons.BgColorsOutlined
+      url: '/extract',
+     // icon: icons.BgColorsOutlined
     },
     {
-      id: 'util-shadow',
-      title: 'Shadow',
+      id: 'util',
+      title: 'Visiualization',
       type: 'item',
-      url: '/shadow',
-      icon: icons.BarcodeOutlined
+      url: '/visual',
+     // icon: icons.BgColorsOutlined
     },
-    {
-      id: 'ant-icons',
-      title: 'Ant Icons',
-      type: 'item',
-      url: '/icons/ant',
-      icon: icons.AntDesignOutlined,
-      breadcrumbs: false
-    }
+    // {
+    //   id: 'util-shadow',
+    //   title: 'Shadow',
+    //   type: 'item',
+    //   url: '/shadow',
+    //   icon: icons.BarcodeOutlined
+    // },
+    // {
+    //   id: 'ant-icons',
+    //   title: 'Ant Icons',
+    //   type: 'item',
+    //   url: '/icons/ant',
+    //   icon: icons.AntDesignOutlined,
+    //   breadcrumbs: false
+    // }
   ]
 };
 
