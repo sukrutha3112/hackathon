@@ -59,14 +59,21 @@ const utilities = {
       id: 'util1',
       title: 'Contract reader',
       type: 'item',
-      url: '/visual',
+      url: '/extract',
       icon: icons.FileTextOutlined
     },
     {
       id: 'util2',
       title: 'API Checker',
       type: 'item',
-      url: '/visual',
+      url: '/api',
+      icon: icons.ApiOutlined
+    },
+    {
+      id: 'util3',
+      title: 'NLP',
+      type: 'item',
+      url: '/nlp',
       icon: icons.ApiOutlined
     },
     // {

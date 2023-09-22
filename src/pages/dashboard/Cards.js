@@ -147,6 +147,36 @@ const Cards = () => {
           </CardActionArea>
         </Card>
       </Grid>
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Card>
+          <CardActionArea>
+            <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana" />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Visualization
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Visualization of the data
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Grid>
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Card>
+          <CardActionArea>
+            <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana" />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Visualization
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Visualization of the data
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Grid>
     </div>
   );
 };

@@ -10,9 +10,10 @@ const AuthBackground = () => {
   return (
     // <Box sx={{ position: 'absolute', zIndex: -1, bottom: 0, marginLeft:-7, fontsize:'medium' }}>
     // <Box sx={{ position: 'absolute', zIndex: -1, width:'20px', heigth:'50px' }}>
-    <div style={{position:'absolute', zIndex: -1, width:'10px'}}>
+    <div style={{position:'absolute', zIndex: -1, backgroundColor:'#f2f8fb'}}>
    
-      <img src={logo} alt="sslogo"  width = "650" height = "650"  />
+      <img src={logo} alt="sslogo"  width = "750" height = "650"  />
+      
     </div>
   );
 };

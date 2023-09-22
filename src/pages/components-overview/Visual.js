@@ -1,20 +1,14 @@
 import React from 'react';
-import { Container,  Typography, Button } from '@mui/material';
-//import { Bar } from 'react-chartjs-2';
-import * as d3 from "d3";
-import Barchart from "./Barchart";
+import {  LineChart } from "@mui/x-charts";
+import { Container,  Typography, Button } from "@mui/material";
+import { PieChart } from '@mui/x-charts/PieChart';
+
 
 const ComponentVisual = () => {
-    const [data, setData] = React.useState([]);
-    //const [loading, setLoading] = React.useState(true);
-  
-    React.useEffect(() => {
-      d3.json("/chart-data.json").then((d) => {
-        setData(d);
-        setLoading(false);
-      });
-      return () => undefined;
-    }, []);
+  // Sample data for the pie chart
+
+
+  // Sample data for the line chart
   
     return (
       <div className="App">
@@ -28,7 +22,7 @@ const ComponentVisual = () => {
             accept=".json"
             style={{ display: 'none' }}
             id="file-upload"
-            onChange={handleFileUpload}
+          //  onChange={handleFileUpload}
           />
           <label htmlFor="file-upload">
             <Button variant="contained" component="span">
@@ -38,14 +32,43 @@ const ComponentVisual = () => {
         
             <div>
               <Typography variant="h6">Chart Visualization</Typography>
-              <Barchart
-        data={data}
-        xKey="category"
-        yKey="value"
-        width={400}
-        height={300}
-        margin={{ top: 20, right: 30, bottom: 40, left: 40 }}
-      />
+
+       
+            <Typography variant="h6" gutterBottom>
+              Pie Chart
+            </Typography>
+            <PieChart
+      series={[
+        {
+          data: [
+            { id: 0, value: 10, label: 'series A' },
+            { id: 1, value: 15, label: 'series B' },
+            { id: 2, value: 20, label: 'series C' },
+          ],
+        },
+      ]}
+      width={400}
+      height={200}
+    />
+       
+      
+            <Typography variant="h6" gutterBottom>
+              Line Chart
+            </Typography>
+            <LineChart
+      xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
+      series={[
+        {
+          data: [2, 5.5, 2, 8.5, 1.5, 5],
+          area: true,
+        },
+      ]}
+      width={300}
+      height={300}
+    />
+     
+
+       
             </div>
        
         </Container>

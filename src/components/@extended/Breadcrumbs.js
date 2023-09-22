@@ -80,6 +80,9 @@ const Breadcrumbs = ({ navigation, title, ...others }) => {
                 <Typography component={Link} to="/" color="textSecondary" variant="h6" sx={{ textDecoration: 'none' }}>
                   Home
                 </Typography>
+                <Typography component={Link} to="/" color="textSecondary" variant="h6" sx={{ textDecoration: 'none' }}>
+                  Utilities
+                </Typography>
                 {mainContent}
                 {itemContent}
               </MuiBreadcrumbs>

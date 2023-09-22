@@ -5,7 +5,7 @@ import {
   // Avatar,
   // AvatarGroup,
   // Box,
-  // Button,
+   Button,
   Grid,
   // List,
   // ListItemAvatar,
@@ -87,6 +87,7 @@ const DashboardDefault = () => {
       {/* row 1 */}
      <Grid item xs={12} sx={{ mb: -2.25 }}>
         <Typography variant="h5">Use Cases</Typography>
+        <div style={{justifyContent:'right', alignContent:'right', display:'flex'}}><Button  variant="contained">Create use cases</Button></div>
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
       <Card >
@@ -169,6 +170,106 @@ const DashboardDefault = () => {
       </CardActionArea>
     </Card>
       </Grid> 
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+      <Card >
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          height="200"
+          image={con}
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            Contract Reader
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+          Contract Reader
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+      </Grid>
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+      <Card >
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          height="200"
+          image={api}
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            API Checker
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            API checker
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+      </Grid> 
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+      <Card >
+      <CardActionArea href="/visual">
+        <CardMedia
+          component="img"
+          height="200"
+          image={viz}
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            Visualization
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+          Visualization of the data
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+      </Grid>
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+      <Card >
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          height="200"
+          image={api}
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            API Checker
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            API checker
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+      </Grid> 
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+      <Card >
+      <CardActionArea href="/extract">
+        <CardMedia
+          component="img"
+          height="200"
+          image={pdf}
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            Extract PDF
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+          Extract PDF
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+      </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
       <Card >
       <CardActionArea>
