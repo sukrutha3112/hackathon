@@ -1,5 +1,5 @@
 // material-ui
-import { useMediaQuery, Container, Link, Typography, Stack } from '@mui/material';
+import { useMediaQuery, Container,  Typography, Stack } from '@mui/material';
 
 // ==============================|| FOOTER - AUTHENTICATION ||============================== //
 
@@ -22,7 +22,7 @@ const AuthFooter = () => {
         </Typography>
 
         <Stack direction={matchDownSM ? 'column' : 'row'} spacing={matchDownSM ? 1 : 3} textAlign={matchDownSM ? 'center' : 'inherit'}>
-          <Typography
+          {/* <Typography
             variant="subtitle2"
             color="secondary"
             component={Link}
@@ -51,7 +51,7 @@ const AuthFooter = () => {
             underline="hover"
           >
             Support
-          </Typography>
+          </Typography> */}
         </Stack>
       </Stack>
     </Container>

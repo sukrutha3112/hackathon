@@ -40,8 +40,8 @@ import { CardActionArea } from '@mui/material';
 import pdf from '../../assets/images/pdf.png'
 import im from './imgtotext.webp';
 import viz from './viz.jpg';
-import api from './api.png'
-import con from './con.png'
+import api from './api.png';
+import con from './contract.png';
 
 // // avatar style
 // const avatarSX = {
@@ -86,7 +86,7 @@ const DashboardDefault = () => {
     <Grid container rowSpacing={4.5} columnSpacing={2.75}>
       {/* row 1 */}
      <Grid item xs={12} sx={{ mb: -2.25 }}>
-        <Typography variant="h5">Dashboard</Typography>
+        <Typography variant="h5">Use Cases</Typography>
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
       <Card >

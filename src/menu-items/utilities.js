@@ -5,9 +5,13 @@ import {
   BarcodeOutlined,
   BgColorsOutlined,
   FontSizeOutlined,
-  LoadingOutlined
+  LoadingOutlined,
+  FileImageOutlined ,
+  FilePdfOutlined,
+  LineChartOutlined,
+  FileTextOutlined,
+  ApiOutlined
 } from '@ant-design/icons';
-
 // icons
 const icons = {
   FontSizeOutlined,
@@ -15,7 +19,12 @@ const icons = {
   BarcodeOutlined,
   AntDesignOutlined,
   LoadingOutlined,
-  AppstoreAddOutlined
+  AppstoreAddOutlined,
+  FileImageOutlined,
+  FilePdfOutlined,
+  LineChartOutlined,
+  FileTextOutlined,
+  ApiOutlined
 };
 
 // ==============================|| MENU ITEMS - UTILITIES ||============================== //
@@ -30,21 +39,35 @@ const utilities = {
       title: 'Parsing Image',
       type: 'item',
       url: '/parsing',
-      icon: icons.FontSizeOutlined
+      icon: icons.FileImageOutlined
     },
     {
       id: 'util-color',
       title: 'Extract PDF',
       type: 'item',
       url: '/extract',
-     // icon: icons.BgColorsOutlined
+      icon: icons.FilePdfOutlined
     },
     {
       id: 'util',
       title: 'Visiualization',
       type: 'item',
       url: '/visual',
-     // icon: icons.BgColorsOutlined
+      icon: icons.LineChartOutlined
+    },
+    {
+      id: 'util1',
+      title: 'Contract reader',
+      type: 'item',
+      url: '/visual',
+      icon: icons.FileTextOutlined
+    },
+    {
+      id: 'util2',
+      title: 'API Checker',
+      type: 'item',
+      url: '/visual',
+      icon: icons.ApiOutlined
     },
     // {
     //   id: 'util-shadow',

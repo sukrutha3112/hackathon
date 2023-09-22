@@ -20,11 +20,10 @@ const HeaderContent = () => {
 
       <IconButton
         component={Link}
-        href="https://github.com/codedthemes/mantis-free-react-admin-template"
         target="_blank"
         disableRipple
         color="secondary"
-        title="Download Free Version"
+       // title="Download Free Version"
         sx={{ color: 'text.primary', bgcolor: 'grey.100' }}
       >
         <GithubOutlined />

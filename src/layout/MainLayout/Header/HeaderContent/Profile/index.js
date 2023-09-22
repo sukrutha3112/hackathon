@@ -56,9 +56,9 @@ function a11yProps(index) {
 const Profile = () => {
   const theme = useTheme();
 
-  const handleLogout = async () => {
-    // logout
-  };
+  // const handleLogout = async () => {
+  //   // logout
+  // };
 
   const anchorRef = useRef(null);
   const [open, setOpen] = useState(false);
@@ -98,7 +98,7 @@ const Profile = () => {
       >
         <Stack direction="row" spacing={2} alignItems="center" sx={{ p: 0.5 }}>
           <Avatar alt="profile user" src={avatar1} sx={{ width: 32, height: 32 }} />
-          <Typography variant="subtitle1">John Doe</Typography>
+          <Typography variant="subtitle1">Nova</Typography>
         </Stack>
       </ButtonBase>
       <Popper
@@ -141,7 +141,7 @@ const Profile = () => {
                           <Stack direction="row" spacing={1.25} alignItems="center">
                             <Avatar alt="profile user" src={avatar1} sx={{ width: 32, height: 32 }} />
                             <Stack>
-                              <Typography variant="h6">John Doe</Typography>
+                              <Typography variant="h6">Nova</Typography>
                               <Typography variant="body2" color="textSecondary">
                                 UI/UX Designer
                               </Typography>
@@ -149,7 +149,7 @@ const Profile = () => {
                           </Stack>
                         </Grid>
                         <Grid item>
-                          <IconButton size="large" color="secondary" onClick={handleLogout}>
+                          <IconButton size="large" color="secondary" href='/login'>
                             <LogoutOutlined />
                           </IconButton>
                         </Grid>
@@ -186,7 +186,7 @@ const Profile = () => {
                           </Tabs>
                         </Box>
                         <TabPanel value={value} index={0} dir={theme.direction}>
-                          <ProfileTab handleLogout={handleLogout} />
+                          <ProfileTab  />
                         </TabPanel>
                         <TabPanel value={value} index={1} dir={theme.direction}>
                           <SettingTab />

@@ -5,7 +5,7 @@ import { Link as RouterLink } from 'react-router-dom';
 import {
   Button,
   Checkbox,
-  Divider,
+ // Divider,
   FormControlLabel,
   FormHelperText,
   Grid,
@@ -23,7 +23,7 @@ import * as Yup from 'yup';
 import { Formik } from 'formik';
 
 // project import
-import FirebaseSocial from './FirebaseSocial';
+//import FirebaseSocial from './FirebaseSocial';
 import AnimateButton from 'components/@extended/AnimateButton';
 
 // assets
@@ -47,7 +47,7 @@ const AuthLogin = () => {
     <>
       <Formik
         initialValues={{
-          email: 'info@codedthemes.com',
+          email: 'nova@statestreet.com',
           password: '123456',
           submit: null
         }}
@@ -151,19 +151,19 @@ const AuthLogin = () => {
               )}
               <Grid item xs={12}>
                 <AnimateButton>
-                  <Button disableElevation disabled={isSubmitting} fullWidth size="large" type="submit" variant="contained" color="primary">
+                  <Button disableElevation disabled={isSubmitting} href='/home' fullWidth size="large" type="submit" variant="contained" color="primary">
                     Login
                   </Button>
                 </AnimateButton>
               </Grid>
-              <Grid item xs={12}>
+              {/* <Grid item xs={12}>
                 <Divider>
                   <Typography variant="caption"> Login with</Typography>
                 </Divider>
               </Grid>
               <Grid item xs={12}>
                 <FirebaseSocial />
-              </Grid>
+              </Grid> */}
             </Grid>
           </form>
         )}

@@ -73,10 +73,10 @@ const Notification = () => {
         color="secondary"
         sx={{ color: 'text.primary', bgcolor: open ? iconBackColorOpen : iconBackColor }}
         aria-label="open profile"
-        ref={anchorRef}
+      //  ref={anchorRef}
         aria-controls={open ? 'profile-grow' : undefined}
         aria-haspopup="true"
-        onClick={handleToggle}
+      //  onClick={handleToggle}
       >
         <Badge badgeContent={4} color="primary">
           <BellOutlined />

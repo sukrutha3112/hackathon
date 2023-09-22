@@ -31,7 +31,6 @@ const Cards = () => {
         <Card>
           <CardActionArea>
           <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana" />
-           {/* <img src={pdfimage} alt="Mantis" width="100" />  */}
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 Parsing Image
