@@ -38,7 +38,7 @@ const dashboard = {
       breadcrumbs: false
     },
     {
-      id: 'dashboard2',
+      id: 'dashboard3',
       title: 'Ask Me',
       type: 'item',
       url: '/dashboard/default',

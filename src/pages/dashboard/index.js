@@ -1,4 +1,4 @@
-// import { useState } from 'react';
+ import { useState } from 'react';
 
 // material-ui
 import {
@@ -42,6 +42,7 @@ import im from './imgtotext.webp';
 import viz from './viz.jpg';
 import api from './api.png';
 import con from './contract.png';
+import UtilityForm from './UtilityForm';
 
 // // avatar style
 // const avatarSX = {
@@ -81,13 +82,24 @@ import con from './contract.png';
 const DashboardDefault = () => {
   // const [value, setValue] = useState('today');
   // const [slot, setSlot] = useState('week');
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
     <Grid container rowSpacing={4.5} columnSpacing={2.75}>
       {/* row 1 */}
      <Grid item xs={12} sx={{ mb: -2.25 }}>
         <Typography variant="h5">Use Cases</Typography>
-        <div style={{justifyContent:'right', alignContent:'right', display:'flex'}}><Button  variant="contained">Create use cases</Button></div>
+        <div style={{justifyContent:'right', alignContent:'right', display:'flex'}}><Button onClick={handleOpen} variant="contained">Create use cases</Button>
+        <UtilityForm open={open} handleClose={handleClose} />
+        </div>
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
       <Card >
